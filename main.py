@@ -2,7 +2,7 @@
 import difflib
 import streamlit as st
 
-def lines_similarity(raw_str) -> str:
+def lines_similarity(raw_str,threshold) -> str:
     lines=raw_str.split('\n')
     lines=[line.strip() for line in lines if len(line.strip())>0]
     sim_list=[]
